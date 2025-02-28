@@ -109,7 +109,7 @@
         
         // Fetch Weather Data
         function fetchWeather() {
-            fetch("https://api.openweathermap.org/data/2.5/weather?q=London&appid=YOUR_API_KEY&units=metric")
+            fetch("https://api.openweathermap.org/data/2.5/weather?q=London&appid=a62118f32731c86766c8c4065b5ccfcd&units=metric")
                 .then(response => response.json())
                 .then(data => {
                     document.getElementById("weatherResult").innerText = `Temperature in London: ${data.main.temp}°C`;
